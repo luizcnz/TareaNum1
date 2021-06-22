@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea1.MainPage">
+
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem 
+            Text="Limpiar" x:Name="Clear"
+            Order="Secondary"
+            Priority="0"
+            Clicked="Clear_Clicked"/>
+    </ContentPage.ToolbarItems>
+
+    <StackLayout 
+        BackgroundColor="#1b1b1b">
+
+
+        <StackLayout BackgroundColor="#1b1b1b" Margin="30,20,30,0" >
+
+
+            <Label Text="1er Numero" FontSize="18" Padding="10,50,30,5" TextColor="#af95cf"/>
+            <Entry FontSize="18"  TextColor="#FF9D85FF" x:Name="num1" Keyboard="Numeric" Placeholder="Primer Numero Aqui" PlaceholderColor="#6A64FA"/>
+
+            <Label Text="2do Numero" FontSize="18" Padding="10,10,30,5" TextColor="#af95cf"/>
+            <Entry FontSize="18"  TextColor="#9D85FF" x:Name="num2" Keyboard="Numeric" Placeholder="Segundo Numero Aqui" PlaceholderColor="#6A64FA"/>
+
+            <Label Text="" FontSize="10" Padding="10,10,10,10" TextColor="#af95cf"/>
+
+            <Button x:Name="btn_suma"  
+                    Text="Sumar" 
+                    BackgroundColor="#af95cf" 
+                    Margin="70,0,70,0"
+                    FontSize="20" Clicked="btn_suma_Clicked"/>
+
+            <Button x:Name="btn_resta"  
+                    Text="Restar" 
+                    BackgroundColor="#af95cf" 
+                    Margin="70,0,70,0"
+                    FontSize="20" Clicked="btn_resta_Clicked"/>
+
+            <Button x:Name="btn_mult"  
+                    Text="Multiplicar" 
+                    BackgroundColor="#af95cf" 
+                    Margin="70,0,70,0"
+                    FontSize="20" Clicked="btn_mult_Clicked"/>
+
+            <Button x:Name="btn_div"  
+                    Text="Dividir" 
+                    BackgroundColor="#af95cf" 
+                    Margin="70,0,70,0"
+                    FontSize="20" Clicked="btn_div_Clicked"/>
+
+
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>

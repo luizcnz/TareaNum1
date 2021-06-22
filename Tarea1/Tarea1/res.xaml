@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea1.res">
+    <ContentPage.Content>
+
+        
+
+
+        <StackLayout 
+        BackgroundColor="#1b1b1b">
+
+
+            <StackLayout BackgroundColor="#1b1b1b" Margin="30,20,30,0" >
+
+                <Label Text="La suma de los numeros:" FontSize="28" Padding="30,50,10,5" TextColor="#af95cf" HorizontalTextAlignment="Center"/>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+                    <Label Text="{Binding n1}" FontSize="24" Padding="0,10,0,0" TextColor="#af95cf"/>
+                    <Label Text="y" FontSize="18" Padding="10,10,10,5" TextColor="#af95cf"/>
+                    <Label Text="{Binding n2}" FontSize="24" Padding="0,10,0,0" TextColor="#af95cf"/>
+                </StackLayout>
+
+                <Label Text="es:" FontSize="18" Padding="0,10,0,5" TextColor="#af95cf" HorizontalTextAlignment="Center"/>
+
+                <StackLayout Margin="0,50,0,0" >
+                    <Label Text="{Binding n3}" FontSize="30" Padding="0,10,00,5" TextColor="#CCA3FF" HorizontalTextAlignment="Center" BackgroundColor="#49318A" VerticalTextAlignment="Center"/>
+                </StackLayout>
+
+
+            </StackLayout>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
